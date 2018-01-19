@@ -10,10 +10,11 @@ Propositional clauses will be stored in a text le. Before the refutation proces
 db(Id,P1,P2,Cl,Next)
 ```
 For such a list where:
-⋅⋅* Cl is a clause (as specified above);
-⋅⋅* Id is a unique clause id (an integer);
-⋅⋅* P1 and P2 are id's of Cl's parent clauses;
-⋅⋅* Next is the rest of the clause list.
+
+* Cl is a clause (as specified above);
+* Id is a unique clause id (an integer);
+* P1 and P2 are id's of Cl's parent clauses;
+* Next is the rest of the clause list.
 
 I have braken down the implementation in 4 parts:
 
