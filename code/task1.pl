@@ -33,6 +33,6 @@ start_level_zero(F) :- 	open(F,read,In),
 
 remove_head(db(_,_,_,_,Next),Next).
 print_remaining(OutHandle,end).
-print_remaining(OutHandle,DB) :- 	write(OutHandle,DB),write(OutHandle,'.'),write(OutHandle,'\n'),
+print_remaining(OutHandle,DB) :-  write(OutHandle,DB),write(OutHandle,'.'),write(OutHandle,'\n'),
                                   remove_head(DB,Next),
                                   print_remaining(OutHandle,Next),!.
